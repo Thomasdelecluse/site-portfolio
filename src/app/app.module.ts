@@ -9,6 +9,8 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProjetComponent } from './projet/projet.component';
 import { ContactComponent } from './contact/contact.component';
+import { GridComponent } from './competence/grid/grid.component';
+import { CercleComponent } from './competence/grid/cercle/cercle.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ContactComponent } from './contact/contact.component';
     PresentationComponent,
     CompetenceComponent,
     ProjetComponent,
-    ContactComponent
+    ContactComponent,
+    GridComponent,
+    CercleComponent,
   ],
   imports: [
     BrowserModule
