@@ -1,9 +1,10 @@
 .grid {
+  width: 1300px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
-  grid-row-gap: 130px;
+  grid-row-gap: 100px;
 }
 
 
