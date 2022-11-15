@@ -11,6 +11,9 @@ import { ProjetComponent } from './projet/projet.component';
 import { ContactComponent } from './contact/contact.component';
 import { GridComponent } from './competence/grid/grid.component';
 import { CercleComponent } from './competence/grid/cercle/cercle.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,12 @@ import { CercleComponent } from './competence/grid/cercle/cercle.component';
     ContactComponent,
     GridComponent,
     CercleComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

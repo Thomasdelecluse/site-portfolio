@@ -1,5 +1,5 @@
 .grid {
-  width: 1300px;
+  padding: 0 calc(50vw - 650px);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
