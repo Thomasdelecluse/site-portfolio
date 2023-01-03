@@ -3,24 +3,22 @@
     <input type="checkbox" id="chk" aria-hidden="true">
 
     <div class="signup">
-      <form>
-        <label  for="chk" aria-hidden="true">Inscription</label>
-        <input class="form-control" type="text" name="txt" placeholder="User name" required="">
-        <input class="form-control" type="email" name="email" placeholder="Email" required="">
-        <input class="form-control" type="password" name="pswd" placeholder="Password" required="">
+      <form [formGroup]="inscription" (ngSubmit)="onFormSubmitIns()">
+        <label  for="chk" aria-hidden="true"><strong>Inscription</strong></label>
+        <input class="form-control" type="text" formControlName="prenom"  placeholder="User name" required="">
+        <input class="form-control" type="email" formControlName="login"  placeholder="Email" required="">
+        <input class="form-control" type="password" formControlName="pass"  placeholder="Password" required="">
         <button>Inscription</button>
       </form>
     </div>
 
     <div class="login">
-      <form>
-        <label for="chk" aria-hidden="true">Connexion</label>
-        <input class="form-control" type="email" name="email" placeholder="Email" required="">
-        <input class="form-control" type="password" name="pswd" placeholder="Password" required="">
+      <form [formGroup]="connexion" (ngSubmit)="onFormSubmitAuth()" >
+        <label for="chk" aria-hidden="true"><strong>Connexion</strong></label>
+        <input class="form-control" type="email" formControlName="login" placeholder="Email" required="">
+        <input class="form-control" type="password" formControlName="pass" placeholder="Password" required="">
         <button>Connexion</button>
       </form>
     </div>
   </div>
 </div>
-
-
