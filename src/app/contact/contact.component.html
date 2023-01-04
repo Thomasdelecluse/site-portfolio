@@ -1,3 +1,43 @@
 <div id="contact" class="contact">
+  <div class="page">
+    <div class="container">
+      <div class="left">
+        <div class="login">Contact</div>
+        <div class="eula">Vous pouvez me contacter grace a ce formulaire ! </div>
+      </div>
+      <div class="right">
+        <div class="form">
+          <label for="email" >Email</label>
+          <input type="email" id="email" class="email" placeholder="Votre email">
+          <label for="text">Message</label>
+          <textarea id="text" placeholder="Votre message"></textarea>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="send">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+              </filter>
+            </defs>
+          </svg>
 
+          <button  id="send-button">
+            <strong class="button-submit">Envoyer</strong>
+            <span class="bubbles">
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+        </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
